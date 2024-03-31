@@ -1,0 +1,104 @@
+.jsxepisode {
+    --art-size: 100px;
+    padding: 10px 15px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+  }
+ 
+  .wrapp_art {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-right: 15px;
+    min-width: var(--art-size);
+    width: var(--art-size);
+    height: var(--art-size);
+    position: relative;
+  }
+  .jsx_art {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .playing {
+    position: absolute;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .pause {
+    display: grid;
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    place-items: center;
+    opacity: 0;
+    transition: opacity 150ms ease 0s;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 40px;
+  }
+  .meta{
+      min-width: 0px;
+      flex: 1 1 auto;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      display: flex;
+      height: var(--art-size);
+      padding: 5px 0px;
+  }
+  .episode_title {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--page-text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    margin-bottom: 3px;
+  }
+  .meta_description {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-size: 14px;
+      line-height: 1.3em;
+      color: rgba(255, 255, 255, 0.6);
+      max-height: 3.9em;
+      margin-right: 15px;
+  }
+  .infor_bar {
+  
+      display: flex;
+      font-size: 12px;
+      font-weight: 500;
+      -webkit-box-align: baseline;
+      align-items: baseline;
+      color: rgb(207, 208, 211);
+      white-space: nowrap;
+      overflow: hidden;
+      min-width: 0px;
+  }
+  .published {
+    margin-right: 10px;
+  }
+  .duration {
+    margin-right: 10px;
+  }
+  .unit_wrapp {
+    
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      margin: 10px 15px;
+      overflow: hidden;
+      max-width: 100%;
+      position: relative;
+  }
