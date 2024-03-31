@@ -1,0 +1,35 @@
+{
+  "name": "projectpodcast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "beautiful": "lint-staged",
+    "start": "nodemon --inspect src/index.js",
+    "node-sass": "sass --watch src/resources/scss/app.scss  src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoManhHung11i/Project-Podcast.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DoManhHung11i/Project-Podcast/issues"
+  },
+  "homepage": "https://github.com/DoManhHung11i/Project-Podcast#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "mongoose": "^8.2.4"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "sass": "^1.72.0"
+  }
+}
