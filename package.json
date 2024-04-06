@@ -22,9 +22,11 @@
   "dependencies": {
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2",
-    "mongoose": "^8.2.4"
+    "mongoose": "^8.2.4",
+    "mongoose-slug-generator": "^1.0.4"
   },
   "devDependencies": {
+    "bcrypt": "^5.1.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "morgan": "^1.10.0",

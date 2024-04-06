@@ -1,5 +1,4 @@
 
-
 class HomeController{
     home(req, res){
         res.render('home');
@@ -19,14 +18,6 @@ class HomeController{
 
     Recently(req, res){
         res.render('Recently');
-    }
-
-    Login(req, res){
-        res.render('Login');
-    }
-    
-    Signup(req, res){
-        res.render('Signup');
     }
 }
 

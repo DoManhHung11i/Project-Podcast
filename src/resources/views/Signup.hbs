@@ -1,23 +1,25 @@
 <!-- SIGNUP -->
         <div class="wrapper">
             <h2 class="welcome" style="color: aliceblue;">welcome</h2>
-            <h1 class="healsoul_signup">SIGN UP FOR HEALSOUL</h1>
-            <form>
-                <label for="">NAME</label>
-                <input type="text" placeholder="Your first name...">
+            <h1 class="healsoullogin">SIGN UP FOR HEALSOUL</h1>
+            <form method="post" action="registerUser" id="signup_form">
+                <label for="userName">NAME</label>
+                <input type="text" placeholder="User name ..." id="userName" name="userName" >
     
-                <label for="">EMAIL</label>
-                <input type="text" placeholder="Email address...">
+                <label for="userEmail">EMAIL</label>
+                <input type="text" placeholder="Email address..." id="userEmail" name="userEmail" >
+     
+                <label for="userPassword">PASSWORD</label>
+                <input type="password" placeholder="Password... (8 characters minimum)" id="userPassword" name="userPassword" >
     
-                <label for="">PASSWORD</label>
-                <input type="password" placeholder="Password... (8 characters minimum)">
-    
-                <label for="">CONFIRM PASSWORD</label>
-                <input type="password" placeholder="Confirm password...">
+                <label for="userPassword_Confirm">CONFIRM PASSWORD</label>
+                <input type="password" placeholder="Confirm password..." id="userPassword_Confirm" name="userPassword_Confirm" >
+
+                <button type="submit" id="signup_button">SIGN UP</button>
             </form>
             
             
-            <button type="submit" id="login_button">SIGN UP</button>
+            
             <br>
             <p id="or" style="color: aliceblue; font-size: 14px;">or</p>
     
@@ -29,5 +31,7 @@
             <p id="policy_terms" style="color: aliceblue;">View Healsoul's <a href="https://podbay.fm/privacy" style="color: aqua;"><u style="text-decoration:underline">Privacy Policy</u></a> and <a href="https://podbay.fm/terms" style="color: aqua;"><u style="text-decoration:underline">Terms of Use.</u></a></p>
             
             <p id="login" style="color: aliceblue;">Already have an account? <a href="Login" style="color: aqua;"><u style="text-decoration: underline">Log in</u></a></p>
-                
+            <!-- Trong file Signup.handlebars hoặc tương tự -->
+        <!-- Trong file Signup.handlebars hoặc tương tự -->
+   
         </div>
